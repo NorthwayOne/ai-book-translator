@@ -1,19 +1,80 @@
+```markdown
+# 📄 PDF Translator — Streamlit App
+
+AI-powered semi-automatic book translation pipeline with EPUB/DOCX export.
+
+![Main UI](Main%20UI.png)
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 2. Run the app
+
+```
+streamlit run app.py
+```
+
+The app will open in your browser at **http://localhost:8501**
+
+---
+
+## 🛠 How to Use
+
+1. **Upload a PDF** — use the button at the top of the page
+2. **Select a fragment** in the sidebar on the left
+3. **Click "Copy prompt"** and paste it into ChatGPT or Claude
+4. **Paste the translation** into the "Paste translation here" field
+5. **Click "Save translation"** — the app will automatically move to the next fragment
+6. Once all fragments are translated — **download as JSON or DOCX**
+
+---
+
+## 📦 Dependencies
+
+| Library       | Purpose                  |
+| ------------- | ------------------------ |
+| `streamlit`   | Web interface            |
+| `pymupdf`     | PDF text extraction      |
+| `python-docx` | Export to Word (.docx)   |
+
+---
+
+## 📂 Project Structure
+
+```
+pdf_translator/
+├── app.py            # Main application code
+├── requirements.txt  # Dependencies
+└── README.md         # This file
+```
+
+---
+---
+
 # 📄 PDF Translator — Streamlit App
 
 Приложение для поэтапного перевода PDF-документов с помощью ChatGPT / Claude.
 
-![Main UI](Main%20UI.png)
 ---
 
 ## 🚀 Быстрый старт
 
 ### 1. Установи зависимости
-```bash
+
+```
 pip install -r requirements.txt
 ```
 
 ### 2. Запусти приложение
-```bash
+
+```
 streamlit run app.py
 ```
 
@@ -34,11 +95,11 @@ streamlit run app.py
 
 ## 📦 Зависимости
 
-| Библиотека | Для чего |
-|---|---|
-| `streamlit` | Веб-интерфейс |
-| `pymupdf` | Извлечение текста из PDF |
-| `python-docx` | Экспорт в Word (.docx) |
+| Библиотека    | Для чего                 |
+| ------------- | ------------------------ |
+| `streamlit`   | Веб-интерфейс            |
+| `pymupdf`     | Извлечение текста из PDF |
+| `python-docx` | Экспорт в Word (.docx)   |
 
 ---
 
@@ -49,4 +110,5 @@ pdf_translator/
 ├── app.py            # Основной код приложения
 ├── requirements.txt  # Зависимости
 └── README.md         # Эта инструкция
+```
 ```
