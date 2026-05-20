@@ -1,30 +1,51 @@
-# AI Book Translator
+# 📄 PDF Translator — Streamlit App
 
-Semi-automatic AI-powered book translation pipeline.
+Приложение для поэтапного перевода PDF-документов с помощью ChatGPT / Claude.
 
-## Features
+---
 
-- PDF extraction
-- Chunk-based translation
-- Context-aware translation
-- Bilingual export
-- EPUB/DOCX generation
-- Translation memory
-- AI-assisted polishing
+## 🚀 Быстрый старт
 
-## Stack
+### 1. Установи зависимости
+```bash
+pip install -r requirements.txt
+```
 
-- Python
-- Streamlit
-- Claude / Gemini APIs
-- PyMuPDF
-- python-docx
-- ebooklib
+### 2. Запусти приложение
+```bash
+streamlit run app.py
+```
 
-## Roadmap
+Откроется браузер по адресу **http://localhost:8501**
 
-- Full automation
-- Async translation workers
-- Automatic glossary extraction
-- Translation QA pipeline
-- Standalone desktop app
+---
+
+## 🛠 Как пользоваться
+
+1. **Загрузи PDF** — кнопка вверху страницы
+2. **Выбери фрагмент** в боковой панели (sidebar слева)
+3. **Нажми «Копировать промпт»** и вставь его в ChatGPT или Claude
+4. **Вставь полученный перевод** в поле «Вставь перевод сюда»
+5. **Нажми «Сохранить перевод»** — приложение автоматически перейдёт к следующему фрагменту
+6. Когда все фрагменты переведены — **скачай JSON или DOCX**
+
+---
+
+## 📦 Зависимости
+
+| Библиотека | Для чего |
+|---|---|
+| `streamlit` | Веб-интерфейс |
+| `pymupdf` | Извлечение текста из PDF |
+| `python-docx` | Экспорт в Word (.docx) |
+
+---
+
+## 📂 Структура проекта
+
+```
+pdf_translator/
+├── app.py            # Основной код приложения
+├── requirements.txt  # Зависимости
+└── README.md         # Эта инструкция
+```
