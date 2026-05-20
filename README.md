@@ -1,4 +1,3 @@
-```markdown
 # 📄 PDF Translator — Streamlit App
 
 AI-powered semi-automatic book translation pipeline with EPUB/DOCX export.
@@ -111,4 +110,4 @@ pdf_translator/
 ├── requirements.txt  # Зависимости
 └── README.md         # Эта инструкция
 ```
-```
+
