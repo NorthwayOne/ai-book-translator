@@ -55,6 +55,15 @@ pdf_translator/
 ```
 
 ---
+## 📸 Screenshots
+
+**Original text (English)**
+![English text](eng_text.png)
+
+**Translated text (Russian)**
+![Translated text](translated_text.png)
+
+---
 ---
 
 # 📄 PDF Translator — Streamlit App
